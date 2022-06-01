@@ -16,7 +16,7 @@ body{
 }
 
 main{
-    width: 700px;
+    width: 60%;
     min-height: 500px;
     background-color: #dbeeff;
     padding: 10px 5px;
@@ -32,9 +32,12 @@ main >h1{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin:auto;
+    
 }
 
 .inputs input{
+    width: 30%;
     margin-right: 10px;
     margin-bottom: 10px;
     height: 20px;
@@ -71,12 +74,14 @@ main >h1{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.container-tabela{
+    overflow-x: auto;
+}
+
 table{
     border-collapse: collapse;
     width: 600px;
-    margin: auto;
-   
-
+    margin: auto;   
 }
 
 th{
@@ -109,4 +114,40 @@ th,td{
     background-color: #ff1b41;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+}
+
+@media(max-width: 990px){
+    main >h1{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    main{
+        width: 90%;
+    }
+
+    
+}
+
+@media(max-width: 600px){
+    table{
+        width: 500px;  
+    }
+
+    .inputs input::placeholder{
+        font-size: 10.5px;
+    }
+
+    th{
+        font-size: 0.85rem;
+    }
+
+    td{
+        font-size: 0.79rem;
+    }
+
+    .delete{
+        width: 30px;
+        padding: 2px 0;
+    }
 }
